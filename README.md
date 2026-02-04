@@ -126,26 +126,42 @@ The model was trained for 30 epochs. Rapid convergence was observed within the f
 
 ---
 
+# MiniCLIP Repository
+
 ## Directory Structure
 
 The repository follows a modular design separating configuration, modeling, inference, and deployment.
 
+```text
+MiniCLIP/
+├── app.py
+├── config.py
+├── model.py
+├── inference.py
+├── run_mac.py
+├── nano_clip_int8.onnx
+├── mini_vlm_best.pth
+├── flickr_bpe-vocab.json
+├── flickr_bpe-merges.txt
+├── screenshots/
+│   ├── onnx_result.png
+│   ├── training_history.png
+│   ├── query-1.png
+│   ├── query-2.png
+│   ├── query-3.png
+│   ├── query-img-1.png
+│   ├── query-img-2.png
+│   └── query-img-3.png
+└── README.md
 
-Install dependencies:
+## Installation
 
+### Install Dependencies
+```bash
 pip install torch torchvision matplotlib pillow tokenizers onnxruntime
 
-Usage
 
-Running the Interactive Demo
-
-The app.py script provides an interactive terminal interface for testing MiniCLIP.
-
-
-python app.py
-
-
-Inference Workflow
+ Inference Workflow
 	1.	Drag and drop an image into the terminal
 	2.	Enter three candidate captions
 	3.	The model computes similarity scores
@@ -218,3 +234,5 @@ Planned improvements include:
 	•	Web-based UI
 	•	Real-time video inference
 	•	Model pruning
+
+    ---

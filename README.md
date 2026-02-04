@@ -126,13 +126,13 @@ The model was trained for 30 epochs. Rapid convergence was observed within the f
 
 ---
 
-## 📁 Directory Structure
+##  Directory Structure
 
 The repository follows a modular design, separating configuration, modeling, inference, and deployment components.
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 Install the required dependencies:
 

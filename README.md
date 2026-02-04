@@ -142,7 +142,7 @@ pip install torch torchvision matplotlib pillow tokenizers onnxruntime
 ```
 
 
-Usage
+## Usage
 
 Running the Interactive Demo
 
@@ -152,79 +152,79 @@ The app.py script provides an interactive terminal interface for testing MiniCLI
 python app.py
 
 
-Inference Workflow
-	1.	Drag and drop an image into the terminal
-	2.	Enter three candidate captions
-	3.	The model computes similarity scores
-	4.	A confidence bar chart is displayed
+### Inference Workflow
+- 1. Drag and drop an image into the terminal
+- 2. Enter three candidate captions
+- 3. The model computes similarity scores
+- 4. A confidence bar chart is displayed
 
 The system automatically detects available hardware acceleration.
 
 ⸻
 
-Sample Inference Results
+## Sample Inference Results
 
 Below are examples demonstrating zero-shot classification and semantic alignment.
 
-Query 1
+## Query 1
 
 
 <p align="center">
   <img src="screenshots/query-1.png" width="900"/>
 </p>
 
-Query 2
+## Query 2
 
 <p align="center">
   <img src="screenshots/query-2.png" width="900"/>
 </p>
 
-Query 3
+## Query 3
 <p align="center">
   <img src="screenshots/query-3.png" width="900"/>
 </p>
 
 
-Image Query Inputs
+## Image Query Inputs
 
-Input Image 1
+## Input Image 1
 <p align="center">
   <img src="screenshots/query-img-1.png" width="900"/>
 </p>
 
-Input Image 2
+## Input Image 2
 
 <p align="center">
   <img src="screenshots/query-img-2.png" width="900"/>
 </p>
 
 
-Input Image 3
+## Input Image 3
 
 <p align="center">
   <img src="screenshots/query-img-3.png" width="900"/>
 </p>
 
 
-Model Artifacts
-	•	mini_vlm_best.pth
-Best PyTorch checkpoint
-	•	nano_clip_int8.onnx
-Quantized ONNX deployment model
+## Model Artifacts
+- •	mini_vlm_best.pth
+    Best PyTorch checkpoint
+- •	nano_clip_int8.onnx
+    Quantized ONNX deployment model
 
 These files enable both research and production deployment.
 
 ⸻
 
-Future Work
+## Future Work
 
-Planned improvements include:
-	•	Larger pretraining datasets
-	•	Multi-lingual text support
-	•	Distillation for mobile deployment
-	•	Web-based UI
-	•	Real-time video inference
-	•	Model pruning
+## Planned improvements include:
+- Larger pretraining datasets
+- Multi-lingual text support
+- Distillation for mobile deployment
+- Web-based UI
+- Real-time video inference
+- Model pruning
 
     
 

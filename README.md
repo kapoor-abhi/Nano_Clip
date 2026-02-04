@@ -140,16 +140,15 @@ Install the required dependencies:
 pip install torch torchvision matplotlib pillow tokenizers onnxruntime
 
 ```
-
+---
 
 ## Usage
 
-Running the Interactive Demo
+- Running the Interactive Demo
 
-The app.py script provides an interactive terminal interface for testing MiniCLIP.
+- The app.py script provides an interactive terminal interface for testing MiniCLIP.
 
-
-python app.py
+- python app.p
 
 
 ### Inference Workflow

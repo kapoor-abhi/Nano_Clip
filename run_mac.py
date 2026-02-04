@@ -72,7 +72,7 @@ class MacNanoCLIP:
         
         for i in sorted_indices:
             score = probs[i] * 100
-            bar = "█" * int(score / 5)
+            bar = "" * int(score / 5)
             print(f"   {score:.1f}%  {bar}  '{captions[i]}'")
 
 if __name__ == "__main__":

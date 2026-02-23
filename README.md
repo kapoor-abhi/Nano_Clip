@@ -1,4 +1,4 @@
-# MiniCLIP: End-to-End Vision-Language Contrastive Learning
+# NANOCLIP: Vision-Language Contrastive Learning
 
 MiniCLIP is a complete, from-scratch implementation of the CLIP (Contrastive Language–Image Pre-training) architecture using PyTorch. This project focuses on building a lightweight, efficient, and deployable vision-language model capable of zero-shot image classification and semantic retrieval.
 

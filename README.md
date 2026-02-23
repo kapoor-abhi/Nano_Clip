@@ -30,6 +30,11 @@ Key objectives include:
 - Contrastive Learning with symmetric cross-entropy loss
 - Shared embedding space of 256 dimensions
 
+<p align="center">
+  <img src="screenshots/architecture.png" width="900"/>
+</p>
+
+
 ### Dataset
 
 - Flickr30k Dataset

@@ -1,4 +1,13 @@
-# NANOCLIP: Vision-Language Contrastive Learning
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/ONNX-005ced?style=for-the-badge&logo=onnx&logoColor=white" alt="ONNX" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace" />
+  <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/Pillow-4A4A4A?style=for-the-badge&logo=python&logoColor=white" alt="Pillow" />
+</p>
+
+<h1 align="center">NANOCLIP: Vision-Language Contrastive Learning</h1>
 
 MiniCLIP is a complete, from-scratch implementation of the CLIP (Contrastive Language–Image Pre-training) architecture using PyTorch. This project focuses on building a lightweight, efficient, and deployable vision-language model capable of zero-shot image classification and semantic retrieval.
 
@@ -6,9 +15,11 @@ Unlike traditional image captioning systems, MiniCLIP learns a shared embedding 
 
 ---
 
-## Project Objectives
+<h2 align="center">Project Objectives</h2>
 
 The primary goal of this project was to design and optimize a compact Vision-Language Model (VLM) suitable for edge and low-resource deployment while preserving the core principles of OpenAI’s CLIP architecture.
+
+---
 
 Key objectives include:
 
@@ -20,7 +31,7 @@ Key objectives include:
 
 ---
 
-## Technical Overview
+<h2 align="center">Technical Overview</h2>
 
 ### Architecture
 
@@ -55,7 +66,7 @@ Key objectives include:
 
 ---
 
-## Performance and Optimization Results
+<h2 align="center">Performance and Optimization Results</h2>
 
 Post-training optimization was performed using ONNX Runtime to improve deployment efficiency.
 
@@ -76,7 +87,7 @@ Post-training optimization was performed using ONNX Runtime to improve deploymen
 
 ---
 
-## System Architecture
+<h2 align="center">System Architecture</h2>
 
 The system consists of two independent transformer encoders that project image and text inputs into a common latent space.
 
@@ -121,7 +132,7 @@ This encourages strong alignment between corresponding image and text embeddings
 
 ---
 
-## Training Progress
+<h2 align="center">Training Progress</h2>
 
 The model was trained for 30 epochs. Rapid convergence was observed within the first 10 epochs, followed by stable validation performance.
 
@@ -131,13 +142,13 @@ The model was trained for 30 epochs. Rapid convergence was observed within the f
 
 ---
 
-##  Directory Structure
+<h2 align="center">Directory Structure</h2>
 
 The repository follows a modular design, separating configuration, modeling, inference, and deployment components.
 
 ---
 
-##  Installation
+<h2 align="center">Installation</h2>
 
 Install the required dependencies:
 
@@ -147,13 +158,15 @@ pip install torch torchvision matplotlib pillow tokenizers onnxruntime
 ```
 ---
 
-## Usage
+<h2 align="center">Usage</h2>
 
 - Running the Interactive Demo
 
-- The app.py script provides an interactive terminal interface for testing MiniCLIP.
+- The `app.py` script provides an interactive terminal interface for testing MiniCLIP.
 
-- python app.p
+```bash
+python app.py
+```
 
 
 ### Inference Workflow
@@ -164,63 +177,62 @@ pip install torch torchvision matplotlib pillow tokenizers onnxruntime
 
 The system automatically detects available hardware acceleration.
 
-⸻
+---
 
-## Sample Inference Results
+<h2 align="center">Sample Inference Results</h2>
 
 Below are examples demonstrating zero-shot classification and semantic alignment.
 
-## Query 1
+### Query I
 
 
 <p align="center">
   <img src="screenshots/query-1.png" width="900"/>
 </p>
 
-## Query 2
+### Query II
 
 <p align="center">
   <img src="screenshots/query-2.png" width="900"/>
 </p>
 
-## Query 3
+### Query III
 <p align="center">
   <img src="screenshots/query-3.png" width="900"/>
 </p>
 
 
-## Image Query Inputs
+<h3 align="center">Image Query Inputs</h3>
 
-## Input Image 1
+### Input Image I
 <p align="center">
   <img src="screenshots/query-img-1.png" width="900"/>
 </p>
 
-## Input Image 2
+### Input Image II
 
 <p align="center">
   <img src="screenshots/query-img-2.png" width="900"/>
 </p>
 
 
-## Input Image 3
+### Input Image III
 
 <p align="center">
   <img src="screenshots/query-img-3.png" width="900"/>
 </p>
 
+---
 
-## Model Artifacts
-- •	mini_vlm_best.pth
-    Best PyTorch checkpoint
-- •	nano_clip_int8.onnx
-    Quantized ONNX deployment model
+<h2 align="center">Model Artifacts</h2>
+- **mini_vlm_best.pth**: Best PyTorch checkpoint
+- **nano_clip_int8.onnx**: Quantized ONNX deployment model
 
 These files enable both research and production deployment.
 
-⸻
+---
 
-## Future Work
+<h2 align="center">Future Work</h2>
 
 ## Planned improvements include:
 - Larger pretraining datasets
